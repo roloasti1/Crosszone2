@@ -1,0 +1,209 @@
+body{
+    background color: black ;
+
+}
+
+h1{
+    color: aqua;
+
+}
+
+h2 {
+    color: blue;
+}
+
+main.container{
+    background-color: beige;
+}
+main.container.fluid{
+    background-color: beige;
+    height: 100vh;
+}
+
+/*Estilos*/
+
+.azul{
+    color: rgb(198, 226, 43);
+}
+.beige{
+    color: brown;
+    background-color: rgb(28, 114, 28);
+    margin: 20px;
+    padding: 20px;
+}
+
+/*id*/
+
+#tituloprincipal{
+    color: darkgoldenrod;
+    
+}
+
+/*CLASS*/
+
+.crosszone{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.item-fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+.verde{
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: brown;
+}
+
+.encabezado{
+    background-color: rgb(26, 22, 22);
+    border: 2px solid;
+}
+.encabezadohijo{
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: x-large;
+}
+
+.diasyhorarios{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* GRIDS */
+
+.gridpadre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.gridfotos {
+display: grid;
+grid-template-columns: repeat(3, 2fr);
+grid-template-rows: repeat(3, 2fr);
+gap: 20px;
+
+
+}
+
+.gridfotos :hover{
+    transform: scale( 1.1);
+    opacity: 0.7;
+}
+
+
+.gridfotos {
+    border-image: round;
+}
+
+
+.gridtienda {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridtiendaitem{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 2fr);
+    gap: 20px;
+    
+}
+
+.gridtienda :hover{
+    transform: scale( 1.1);
+    opacity: 0.7;
+}
+
+/* Respomsive*/
+
+@media screen and (max-width: 768px) {
+   
+    .gridfotos{
+        grid-template-columns: repeat(2, 2fr); 
+    }
+
+    .item-fixed{
+        display: none;
+
+    }
+    .gridtiendaitem{
+        grid-template-columns: repeat(2, 2fr); 
+
+    }
+
+    h1{
+        font-size: 86%;
+    
+    }
+    h2 {
+        font-size: 86%;
+    }
+
+    .encabezadohijo{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-size: medium;
+    
+    }
+
+    .diasyhorarios{
+        font-size: medium;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    
+}
+
+@media screen and (max-width: 420px) {
+   
+    .gridfotos{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .item-fixed{
+        display: none;
+
+    }
+    .gridtiendaitem{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    h1{
+        font-size: 70%;
+    
+    }
+    h2{
+        font-size: 70%;
+    }
+    .encabezadohijo{
+
+        font-family: 'Times New Roman', Times, serif;
+        font-style: oblique;
+        font-size: small;
+    
+    }
+    .diasyhorarios{
+        font-size: x-small;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+}
+
+    
+/* Gradient y transformaciones*/
+
+body{
+    background: linear-gradient(to left black grey green blue );
+}
