@@ -57,10 +57,10 @@ main.container.fluid{
     color: brown;
 }
 
-.encabezado{
+/*.encabezado{
     background-color: rgb(26, 22, 22);
     border: 2px solid;
-}
+}*/
 .encabezadohijo{
 
     font-family: 'Times New Roman', Times, serif;
